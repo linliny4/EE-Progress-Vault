@@ -6,11 +6,11 @@ use IEEE.NUMERIC_STD.ALL;
 
 
 entity Stopwatch is
-Port (set_main: in std_logic := '0';
-      reset_main: in std_logic := '0';
-      clock_main: in std_logic := '0';
-      time_output: out std_logic_vector (7 downto 0) := "00000000"; -- The output should be 4 seven segment displays showing the time of the stopwatch. 7 x 4 = 28
-      display_number: out std_logic_vector (3 downto 0) := "0000"); 
+Port (set_main: in std_logic;
+      reset_main: in std_logic;
+      clock_main: in std_logic;
+      time_output: out std_logic_vector (7 downto 0); -- The output should be 4 seven segment displays showing the time of the stopwatch. 7 x 4 = 28
+      display_number: out std_logic_vector (3 downto 0)); 
      
 end Stopwatch;
 
